@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/slider/slider",
+    "pages/setting/setting"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "lightseagreen",
+    "navigationBarTitleText": "欢迎"
+  },
+  "tabBar": {
+    "backgroundColor": "green",
+    "color": "yellow",
+    "selectedColor": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "段子",
+        "iconPath": "../images/NetflixN.png",
+        "selectedIconPath": "../images/NetflixS.png"
+      },
+      {
+        "pagePath": "pages/setting/setting",
+        "text": "设置",
+        "iconPath": "../images/burger.png",
+        "selectedIconPath": "../images/burger_focus.png"
+      }
+    ],
+    "networkTimeout": {
+      "request": 20000,
+      "connectSocket": 20000,
+      "uploadFile": 20000,
+      "downloadFile": 20000
+    },
+    "debug":true
+  }
+}

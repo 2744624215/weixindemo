@@ -1,0 +1,25 @@
+<view class="container">
+  <scroll-view scroll-y="true" bindscrolltoupper="upperloadmore" bindscrolltolower="lowerloadmore" bindscroll="scroll" scroll-top="{{scrollTop}}" scroll-with-animation="{{true}}" style="height:100%;" >
+    <view class="loading" hidden="{{hiddenTop}}">
+      <image src="../../images/load.gif" mode="aspectFill"></image>
+    </view>
+    <view class="scroll-view-item" wx:for="{{contentlist}}">
+      <view class="header">
+        <view class="header-img">
+          <image src="{{item.profile_image}}"></image>
+        </view>
+        <view class="header-Info">
+          <text class="header-Info-title"> {{item.name}}</text>
+          <text class="header-Info-data">{{item.create_time}}</text>
+        </view>
+      </view>
+      <view class="content">
+        <text>{{item.text}}</text>
+      </view>
+    </view>
+    <view class="loading" hidden="{{hiddenBottom}}">
+      <image class="bottom_img" src="../../images/load1.gif" mode="aspectFill"></image>
+    </view>
+  </scroll-view>
+
+</view>
